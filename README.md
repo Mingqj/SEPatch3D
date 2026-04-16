@@ -31,7 +31,7 @@ SEPatch3D is a dynamic patch-based framework for ViT-based multi-view 3D object 
 | [**SEPatch3D-fast**](projects/configs/StreamPETR/SEPatch3D_fast_l_stage2.py) |    250.2   | 61.2 | 52.1 |-|
 | [**SEPatch3D-faster**](projects/configs/StreamPETR/SEPatch3D_faster_l_stage2.py) |    194.3  | 60.3 | 51.6 |-|
 | StreamPETR* | 1309.0   | 62.7 | 55.8 |-|
-| [**SEPatch3D-fast-1600***](projects/configs/StreamPETR/SEPatch3D_fast_l_1600_stage2.py) |    675.4   | 62.7 | 64.5 |-|
+| [**SEPatch3D-fast-1600***](projects/configs/StreamPETR/SEPatch3D_fast_l_1600_stage2.py) |    675.4   | 62.7 | 54.5 |-|
 | [**SEPatch3D-faster-1600***](projects/configs/StreamPETR/SEPatch3D_faster_l_1600_stage2.py) |    554.4   | 62.4 | 54.2 |-|
 
 * image resolution is 640 × 1600.
@@ -66,7 +66,7 @@ bash ./tools/dist_train.sh projects/configs/StreamPETR/stream_petr_eva_flexivit_
 
 # image resolution: 640 × 1600
 bash ./tools/dist_train.sh projects/configs/StreamPETR/stream_petr_eva_flexivit_fast_l_1600_stage1.py 4
-bash ./tools/dist_train.sh projects/configs/StreamPETR/stream_petr_eva_flexivit_fast_l_1600_stage1.py 4
+bash ./tools/dist_train.sh projects/configs/StreamPETR/stream_petr_eva_flexivit_faster_l_1600_stage1.py 4
 
 ```
 
@@ -80,7 +80,7 @@ bash ./tools/dist_test.sh projects/configs/StreamPETR/SEPatch3D_faster_l_stage2.
 
 # image resolution: 640 × 1600
 bash ./tools/dist_test.sh projects/configs/StreamPETR/SEPatch3D_fast_l_1600_stage2.py "./work_dirs/SEPatch3D_fast_l_1600_stage2/SEPatch3D_fast_l_1600.pth" 4 --eval mAP
-bash ./tools/dist_test.sh projects/configs/StreamPETR/SEPatch3D_fast_l_1600_stage2.py "./work_dirs/SEPatch3D_fast_l_1600_stage2/SEPatch3D_fast_l_1600.pth" 4 --eval mAP
+bash ./tools/dist_test.sh projects/configs/StreamPETR/SEPatch3D_faster_l_1600_stage2.py "./work_dirs/SEPatch3D_faster_l_1600_stage2/SEPatch3D_faster_l_1600.pth" 4 --eval mAP
 ```
 
 ## ❤️ Acknowledgement
