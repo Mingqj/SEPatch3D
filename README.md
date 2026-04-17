@@ -26,7 +26,7 @@ SEPatch3D is a dynamic patch-based framework for ViT-based multi-view 3D object 
 ## 💾 Main Results
 
 **nuScenes val set**
-| Config                                    | Runtime | mAP  | NDS |                                                Model                                                |
+| Config                                    | Inference Time | mAP  | NDS |                                                Model                                                |
 |:-----------------------------------------:|:------:|:----:|:----:|:--------------------------------------------------------------------------------------------------:|
 | StreamPETR | 317.0   | 61.2 | 52.1 |-|
 | [**SEPatch3D-fast**](projects/configs/StreamPETR/SEPatch3D_fast_l_stage2.py) |    250.2 (-21%)  | 61.2 | 52.1 |[Weights](https://drive.google.com/file/d/1UXfs4kmM-yVp55uyI_MPLqpSG3cTuCn4/view?usp=drive_link)|
