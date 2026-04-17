@@ -270,5 +270,5 @@ find_unused_parameters=False #### when use checkpoint, find_unused_parameters mu
 checkpoint_config = dict(interval=num_iters_per_epoch, max_keep_ckpts=3)
 runner = dict(
     type='IterBasedRunner', max_iters=num_epochs * num_iters_per_epoch)
-load_from="/opt/data/private/codeN3/ToC3D/work_dirs/stream_petr_eva_flexivit_faster_l_1600_stage1/iter_84384.pth"
+load_from="/work_dirs/stream_petr_eva_flexivit_faster_l_1600_stage1/iter_84384.pth"
 resume_from=None
