@@ -59,6 +59,7 @@ OcRFDet
 #### 🏋️ Train SEPatch model
 
 The training process consists of two steps: 
+
 Stage 1: Training flexivit 
 ```shell
 # image resolution: 320 × 800
@@ -72,6 +73,16 @@ bash ./tools/dist_train.sh projects/configs/StreamPETR/stream_petr_eva_flexivit_
 ```
 
 stage 2: Training IPS and CGFE
+```shell
+# image resolution: 320 × 800
+bash ./tools/dist_train.sh projects/configs/StreamPETR/SEPatch3D_fast_l_stage2.py 4
+bash ./tools/dist_train.sh projects/configs/StreamPETR/SEPatch3D_faster_l_stage2.py 4
+
+# image resolution: 640 × 1600
+bash ./tools/dist_train.sh projects/configs/StreamPETR/SEPatch3D_fast_l_1600_stage2.py 4
+bash ./tools/dist_train.sh projects/configs/StreamPETR/SEPatch3D_faster_l_1600_stage2.py 4
+
+```
 
 #### 📋 Test SEPatch model
 ```shell
