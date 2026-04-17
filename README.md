@@ -58,7 +58,7 @@ OcRFDet
 
 #### 🏋️ Train SEPatch model
 
-The training process consists of two steps: 
+The training process consists of two stages: 
 
 Stage 1: Training flexivit 
 ```shell
